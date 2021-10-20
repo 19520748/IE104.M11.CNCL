@@ -1,0 +1,240 @@
+/*header*/
+a{
+    text-decoration: none;
+}
+.header{
+    height: 120px;
+    background-color: #0D8244;
+    color:#ffffff;
+    width: 100%;
+    margin-top: 0px;
+}
+.header-with-search{
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+.header__webname{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 30px;
+    align-items: center;
+
+}
+/* searchbar */
+.header__search{
+    background-color: #212529;
+    margin-left: 200px;
+    border-radius: 100px;
+    width: 551px;
+    height: 55px;
+    left: 500px;
+    top: 30px;
+}
+.header__search-icon{
+    font-size: 20px;
+    margin-left: 9px;
+    margin-top: 1px;
+}
+.header__search-input{
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    width: 500px;
+    height: 40px;
+    color: #ffffff;
+    align-items: center;
+    border: none;
+    outline: none;
+    margin-top: 7px;
+    background-color: #212529;
+}
+/* user */
+.header__user{
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+}
+.header__user-frame{
+    width: 50px;
+    height: 50px;
+    margin-left: 300px;
+    background: #FA00FF;
+    border: 3px solid #000000;
+    border-radius: 50%
+    }
+.header__user-icon{
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+body {
+    background-color: #212529;
+}
+.container{
+    padding: 20px;
+    background-color: #212529;
+    width: 100%;
+    height: 90%;
+    color: #fff;
+}
+
+.ads-bar{
+    position: absolute;
+    align-items: center;
+    margin-top:65px;
+    margin-left: 60px;
+    font-size: 20px;
+}
+.ads-food{
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    border-color: #0D8244;
+    border: solid 2px;
+    width: 855px;
+    height:230px;
+    text-align: center;
+
+}
+.ads-food-item{
+    display: flex;
+    justify-content: space-around
+}
+
+.a{
+    width: 239px;
+    height:131px;
+    border-radius:10px;
+    border: #0D8244 solid 3px;
+    background-image: url(image/viet.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 60px;
+    font-size:20px;
+    font-weight: bold;
+}
+.b{
+    width: 239px;
+    height:131px;
+    border-radius:10px;
+    border: #0D8244 solid 3px;
+    background-image: url(image/nhat.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 60px;
+    font-size:20px;
+    font-weight: bold;
+}
+.c{
+    width: 239px;
+    height:131px;
+    border-radius:10px;
+    border: #0D8244 solid 3px;
+    background-image: url(image/thai.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 60px;
+    font-size:20px;
+    font-weight: bold;
+}
+.nav-list {
+    padding-left: 0;
+    margin: 20px 20px;
+    width: 855px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    color: #000;
+    background-color: #C4C4C4;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 65px;
+    cursor: pointer;
+}
+
+.food-list{
+    display: flex;
+    justify-content: space-around;
+    width: 855px;
+    text-align: center;
+}
+.food-items{
+    width: 278px;
+    border-radius: 10px #fff solid 2px;
+    border-radius:10px;
+    border: #fff  solid 3px;
+    background-color: #0D8244;
+}
+
+.aside{
+    float:right;
+    width:300px;
+    height:600px;
+    margin-top:5px;
+    margin-right: 5px;
+    border-radius: 20px;
+    border-color: #0D8244;
+    border: solid 2px;
+    text-align: center;
+}
+.aside h1{
+    margin-bottom: 40px;
+}
+.aside img{
+    padding:5px;
+}
+.aside-item{
+    display: flex;
+    margin: 10px 0px;
+    background-color: #0D8244;
+    border-top: #fff  solid 2px;
+    border-bottom: #fff  solid 2px;
+    text-align: left;
+}
+/* footer */
+.footer{
+    height: auto;
+    background-color: #0D8244;
+}
+.footer__heading{
+    color: #ffffff;
+    font-size: 20px;
+}
+.footer__logo{
+    display: flex;
+}
+.footer__icon{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    width: 100%;
+    color: #ffffff;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+}
+.footer__list{
+    color: #ffffff;
+    font-size: 14px;
+    list-style: none;
+}
+.footer-item{
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+    line-height: 1.6;
+}
+.footer-item__link{
+    text-decoration: none;
+    color: #ffffff;
+}
