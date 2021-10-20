@@ -1,0 +1,224 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+
+.TXB-body{
+    font-family: 'Comfortaa', cursive;
+    background-color:#212529 ;
+}
+
+
+.TXB-r-p{
+    padding-top: 80px;
+   
+}
+
+/*navigation bar*/ 
+.TXB-navbar.r-nav{
+    background: #0D8244;
+    padding: 20px 0;
+    transition: 0.5s all;
+
+}
+
+.TXB-navbar .navbar-brand{
+    font-size: 50px;
+    color:#fff;
+    font-family: 'Acme', sans-serif;
+
+    
+
+}
+.TXB-navbar .navbar-nav li a{
+    color:rgba(255, 255, 255, 0.8) !important;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    font-family: 'Comfortaa', cursive;
+
+}
+.TXB-navbar .navbar-nav li{
+    margin-left: 15px;
+}
+.TXB-navbar .navbar-nav-icon-ava i{
+    font-size: 50px;
+    border:3px solid #fff;
+    border-radius: 50%;
+}
+.TXB-navbar .navbar-nav input{
+    background: #000 !important;
+    border-radius: 100px;
+    border:2px solid #fff;
+    text-indent: 33px;
+    color: white !important;
+    /* width: 400px !important; */
+    height: 50px;
+} 
+.TXB-navbar .navbar-nav i{
+   position: absolute;
+   color: #fff;
+   margin-top: 15px;
+   margin-left: 13px;
+
+} 
+
+.TXB-navbar.r-nav.TXB-stickyadd{
+    background: #0D8244 !important;
+    padding: 15px 0;
+    box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+    transition: 0.5s all ease-in-out;
+}
+.TXB-navbar.TXB-stickyadd .navbar-brand{
+    color: black;
+    font-size: 40px;
+    transition: 0.5s all;
+}
+
+.TXB-navbar.TXB-stickyadd .navbar-nav .nav-link{
+    color:black !important;
+}
+
+
+
+.TXB-navbar .hamburger{
+    color:white
+}
+
+
+
+
+.TXB-navbar.TXB-stickyadd .hamburger{
+    color: black;
+}
+.TXB-home{
+    height: 10vh;
+    width: 100%;
+   
+}
+.TXB-header-content{
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 160px;
+    padding: 60px;
+}
+
+
+.TXB-content-box p{
+    width: 100%;
+    font-size: 40px;
+    color:#fff
+}
+
+
+.TXB-about .special-address{
+    border: 3px solid #fff;
+    padding-top: 30px;
+    
+    border-radius: 30px;
+    
+}
+.TXB-about .special-address .card{
+    padding: 5px;
+    position:relative;
+    background: #2BC53F;
+    border-radius: 20px;
+    
+    box-shadow: 5px 10px 8px #fff
+}
+.TXB-about .special-address h1{
+    
+    color: #fff;
+   
+    
+}
+.TXB-about .special-address .card-text{
+    position: relative;
+    margin-left: 90px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    
+}
+.TXB-about .special-address .card-text i{
+color: yellow;
+}
+.TXB-about .special-address img{
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    margin-top: 10px;
+    align-items: center;
+  
+}
+.TXB-about .post-image img{
+    border: 3px solid #fff;
+    border-radius: 20px;
+}
+.TXB-about .post-text {
+    border: 3px solid #fff;
+    border-radius: 30px;
+    padding: 40px;
+    margin: 50px;
+    font-size: 25px;
+    color: #fff;
+}
+
+/* .hire-me {
+    background: #0D8244;
+} */
+
+.TXB-grid {
+    
+    max-width: 100%;
+    margin: 0 auto;
+    background: #0D8244;
+    margin-top: 100px;
+}
+
+.TXB-grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.TXB-grid__column-2-4 {
+    padding: 10px 5px;
+    width: 25%;
+}
+
+.TXB-grid .footer__heading{
+    color: #ffffff;
+    font-size: 20px;
+}
+.TXB-grid .footer__logo{
+    display: flex;
+}
+.TXB-grid .footer__icon{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    width: 100%;
+    color: #ffffff;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.TXB-grid .footer__list{
+    color: #ffffff;
+    font-size: 14px;
+    list-style: none;
+}
+.TXB-footer-item{
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+    line-height: 1.6;
+}
+.TXB-grid .footer-item__link{
+    text-decoration: none;
+    color: #ffffff;
+}
