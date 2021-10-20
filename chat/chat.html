@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <div id="web-content">
+        <div class="chat-container">
+            <div class="chat-banner">
+                <img src="./assets/img/user-avatar.png" alt="user's avatar" class="user-avatar">
+                <div class="user-name1">Name</div>
+            </div>
+            <div id="chat-content">
+                <!-- message container -->
+            </div>
+        </div>
+        <form id="send-container">
+            <input type="text" required placeholder="Nhập tin nhắn..." id="message-input">
+            <button type="submit" id="send-button">Gửi</button>
+        </form>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script>
+        $(document).ready(function () {
+            $("#header").load("header.html");
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+</body>
+
+</html>
