@@ -1,0 +1,81 @@
+.NavbarAfterLogin{
+    background: #0D8244;
+}
+
+.TC-navbar.r-nav{
+    background: #0D8244;
+    padding: 20px 0;
+    transition: 0.5s all;
+
+}
+
+.TC-navbar .navbar-brand{
+    font-size: 50px;
+    color:#fff;
+    font-family: 'Acme', sans-serif;
+
+    
+
+}
+.TC-navbar .container{
+    background: #0D8244 !important;
+}
+.TC-navbar .navbar-nav li a{
+    color:rgba(255, 255, 255, 0.8) !important;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    font-family: 'Comfortaa', cursive;
+
+}
+.TC-navbar .navbar-nav li{
+    margin-left: 15px;
+}
+.TC-navbar .navbar-nav-icon-ava i{
+    font-size: 50px;
+    border:3px solid #fff;
+    border-radius: 50%;
+}
+.TC-navbar .navbar-nav input{
+    background: #000 !important;
+    border-radius: 100px;
+    border:2px solid #fff;
+    text-indent: 33px;
+    color: white !important;
+    width: 400px !important;
+    height: 50px;
+    font-size: 20px;
+} 
+.TC-navbar .navbar-nav i{
+   position: absolute;
+   color: #fff;
+   margin-top: 15px;
+   margin-left: 13px;
+   font-size: 20px;
+
+} 
+
+.TC-navbar.r-nav.TC-stickyadd{
+    background: #0D8244 !important;
+    padding: 15px 0;
+    box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+    transition: 0.5s all ease-in-out;
+}
+.TC-navbar.TC-stickyadd .navbar-brand{
+    color: black;
+    font-size: 40px;
+    transition: 0.5s all;
+}
+
+.TC-navbar.TC-stickyadd .navbar-nav .nav-link{
+    color:black !important;
+}
+
+.TC-navbar .hamburger{
+    color:white
+}
+
+
+.TC-navbar.TC-stickyadd .hamburger{
+    color: black;
+}
