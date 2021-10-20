@@ -1,88 +1,152 @@
-/*header*/
-a{
-    text-decoration: none;
-}
-.header{
-    height: 120px;
-    background-color: #0D8244;
-    color:#ffffff;
-    width: 100%;
-    margin-top: 0px;
-}
-.header-with-search{
-    height: 120px;
-    display: flex;
-    align-items: center;
-}
-.header__webname{
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 30px;
-    align-items: center;
-
-}
-/* searchbar */
-.header__search{
+/* Container */
+body{
     background-color: #212529;
-    margin-left: 200px;
+}
+.webreview_container{
+    color: #ffffff;
+    margin: 10px;
+    display: flex;
+}
+.container_img-login{
+    width: 585px;
+    height: 518px;
+}
+.img{
+    border-radius: 20%;
+}
+/*Login*/
+.login_arrtibutes{
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 88px;
+}
+.Login__form{
+    color: #3CAF4B;
+    margin: 0 auto;
+    font-size: 26px;
+}
+.Login__username-space{
+    display: flex;
+}
+.Login__username-icon{
+    width: 50px;
+    height: 50px;
+    margin-top: 2px;
+}
+.Login__username{
+    width: 200px;
+    display: flex;
     border-radius: 100px;
-    width: 551px;
+    width: 300px;
     height: 55px;
-    left: 500px;
-    top: 30px;
+    border: 2px solid;
+    border-color: #ffffff;
+    margin-left: 20px;
 }
-.header__search-icon{
-    font-size: 20px;
-    margin-left: 9px;
-    margin-top: 1px;
-}
-.header__search-input{
+.Login__username-input{
     font-family: 'Comfortaa', cursive;
     font-size: 20px;
-    width: 500px;
-    height: 40px;
+    width: 260px;
+    height: 20px;
     color: #ffffff;
     align-items: center;
     border: none;
     outline: none;
-    margin-top: 7px;
+    margin-top: 15px;
+    margin-left: 15px;
     background-color: #212529;
+    display: flex;
 }
-/* user */
-.header__user{
-    width: 150px;
-    text-align: center;
-    text-decoration: none;
+/*password*/
+.Login__password-space{
+    display: flex;
+    margin-top: 20px;
 }
-.header__user-frame{
+.Login__password-icon{
     width: 50px;
     height: 50px;
-    margin-left: 300px;
-    background: #FA00FF;
-    border: 3px solid #000000;
-    border-radius: 50%
-    }
-.header__user-icon{
-    margin-top: 5px;
-    font-size: 30px;
+    margin-left: 15px;
+    margin-top: 13px;
+    color: #ffffff;
 }
-
-body {
+.Login__password{
+    width: 200px;
+    display: flex;
+    border-radius: 100px;
+    width: 300px;
+    height: 55px;
+    border: 2px solid;
+    border-color: #ffffff;
+    margin-left: 5px;
+}
+.Login__password-input{
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    width: 260px;
+    height: 20px;
+    color: #ffffff;
+    align-items: center;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    margin-left: 15px;
     background-color: #212529;
+    display: flex;
+}
+/*button*/
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 12px 48px;
+    width: 371px;
+    margin-top: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.btn:hover{
+    background-color: #0D8244;
+    text-shadow: 1px 1px 2px #3CAF4B;
+}
+.btn--login{
+    background-color: #0A6937;
+}
+.btn--disable{
+    opacity: 0.5 !important;
+    cursor: default;
+}
+.login__extend{
+    text-align: right;
+}
+.login__extend1:hover{
+    color: #FAFF0B;
+}
+.login__extend1{
+    margin-top: 20px;
+    color: #0D8244;
+    outline: none;
+    text-decoration: none;
 }
 .container{
-    padding: 20px;
     background-color: #212529;
     width: 100%;
     height: 90%;
     color: #fff;
 }
-
 .ads-bar{
-    position: absolute;
-    align-items: center;
-    margin-top:65px;
-    margin-left: 60px;
-    font-size: 20px;
+    background-image: url(./mi.png);
+    margin-left: 40px;
+    font-size: 40px;
+    width: 1191px;
+    height: 214px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 60px;
 }
 .ads-food{
     margin-top: 5px;
@@ -93,19 +157,23 @@ body {
     width: 855px;
     height:230px;
     text-align: center;
+    cursor: pointer;
+}
 
+.ads-food h1{
+    font-size: 25px;
+    color: #3CAF4B;
 }
 .ads-food-item{
     display: flex;
     justify-content: space-around
 }
-
 .a{
     width: 239px;
     height:131px;
     border-radius:10px;
     border: #0D8244 solid 3px;
-    background-image: url(image/viet.png);
+    background-image: url(./viet.png);
     background-size: 100%;
     background-repeat: no-repeat;
     text-align: center;
@@ -118,7 +186,7 @@ body {
     height:131px;
     border-radius:10px;
     border: #0D8244 solid 3px;
-    background-image: url(image/nhat.png);
+    background-image: url(./nhat.png);
     background-size: 100%;
     background-repeat: no-repeat;
     text-align: center;
@@ -131,7 +199,7 @@ body {
     height:131px;
     border-radius:10px;
     border: #0D8244 solid 3px;
-    background-image: url(image/thai.png);
+    background-image: url(./thai.png);
     background-size: 100%;
     background-repeat: no-repeat;
     text-align: center;
@@ -139,28 +207,44 @@ body {
     font-size:20px;
     font-weight: bold;
 }
+.a:hover{
+    opacity: 0.6;
+    font-size: 21px;
+}
+.b:hover{
+    opacity: 0.6;
+    font-size: 21px;
+}
+.c:hover{
+    opacity: 0.6;
+    font-size: 21px;
+}
 .nav-list {
     padding-left: 0;
     margin: 20px 20px;
     width: 855px;
     justify-content: space-around;
     display: flex;
-}
-
-.nav-item {
     list-style: none;
-    margin: 0 8px;
+}
+.button{
     display: inline-block;
-    color: #000;
-    background-color: #C4C4C4;
-    border: none;
-    outline: none;
     text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 10px;
+    color: #000000;
     border-radius: 65px;
+    width: 105px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
     cursor: pointer;
+    transition: opacity 0.2s;
+}
+.button:hover{
+    opacity: 0.8;
+    font-size: 20px;
+}
+.button-item{
+    background-color: #C4C4C4;
 }
 
 .food-list{
@@ -168,6 +252,7 @@ body {
     justify-content: space-around;
     width: 855px;
     text-align: center;
+    cursor: pointer;
 }
 .food-items{
     width: 278px;
@@ -180,16 +265,19 @@ body {
 .aside{
     float:right;
     width:300px;
-    height:600px;
+    height:616px;
     margin-top:5px;
-    margin-right: 5px;
+    margin-left: 20px;
     border-radius: 20px;
     border-color: #0D8244;
     border: solid 2px;
     text-align: center;
+
 }
 .aside h1{
     margin-bottom: 40px;
+    font-size: 30px;
+    color: #3CAF4B;
 }
 .aside img{
     padding:5px;
@@ -201,40 +289,4 @@ body {
     border-top: #fff  solid 2px;
     border-bottom: #fff  solid 2px;
     text-align: left;
-}
-/* footer */
-.footer{
-    height: auto;
-    background-color: #0D8244;
-}
-.footer__heading{
-    color: #ffffff;
-    font-size: 20px;
-}
-.footer__logo{
-    display: flex;
-}
-.footer__icon{
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    width: 100%;
-    color: #ffffff;
-    font-size: 30px;
-    align-items: center;
-    text-align: center;
-}
-.footer__list{
-    color: #ffffff;
-    font-size: 14px;
-    list-style: none;
-}
-.footer-item{
-    color: #ffffff;
-    font-size: 18px;
-    text-decoration: none;
-    list-style: none;
-    line-height: 1.6;
-}
-.footer-item__link{
-    text-decoration: none;
-    color: #ffffff;
 }
