@@ -15,13 +15,11 @@
 .chat-banner .user-avatar {
     padding: 5px;
     padding-left: 15px;
-    display: inline-block;
     float: left;
 }
 
 .chat-banner .user-name1 {
     font-family: 'Comfortaa', cursive;
-    display: inline-block;
     float: left;
     font-size: 26px;
     color: #fff;
