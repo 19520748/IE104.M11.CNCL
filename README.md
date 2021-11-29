@@ -1,5 +1,5 @@
 # IE104.M11.CNCL
-***VUI LÒNG SAU KHI SỬA CODE THÌ QUĂNG CODE LÊN BRANCH KHÁC,KHÔNG ĐỤNG TỚI BRANCH MASTER NHE !!!***<br />
+***VUI LÒNG SAU KHI SỬA CODE THÌ QUĂNG CODE LÊN BRANCH KHÁC,KHÔNG ĐỤNG TỚI PHẦN BACKEND (API) VÀ BRANCH MASTER NHE !!!***<br />
 CÁCH XỬ LÝ SAU KHI PULL CODE VỀ<br />
 VÀO TRONG THƯ MỤC API VÀ GÕ CÂU LỆNH : ***npm install (NHỚ cd api)***<br />
 TƯƠNG TỰ,VÀO TRONG THƯ MỤC CLIENT VÀ GÕ CÂU LỆNH : ***npm install (NHỚ cd client)***<br />
