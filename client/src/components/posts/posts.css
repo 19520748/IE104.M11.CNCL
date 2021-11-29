@@ -1,0 +1,60 @@
+.posts{
+    flex: 9;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 15px;
+   
+    
+}
+.postsDesc{
+    border: 3px solid #fff;
+    border-radius: 20px;
+    margin: 10px;
+
+ 
+}
+.postsDesc p{
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    font-size: 40px;
+    display: flex;
+    padding: 10px;
+}
+.postsImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.postsImg img{
+    padding: 10px;
+    height: 200px;
+    width: 350px;
+    cursor: pointer;
+}
+/* .postsImg1{
+    background-image:url("/images/Rectangle 32.png") ;
+    background-repeat:no-repeat ;
+} */
+
+.postsListItem{
+ color: #000;
+ margin-right: 40px;
+ font-size: 25px;
+ border: 3px solid #C4C4C4;
+ padding: 13px;
+ font-family: 'Comfortaa', cursive;
+ font-weight: bold;
+ background: #C4C4C4;
+ border-radius: 20px;
+ cursor: pointer;
+ 
+}
+.postsListItem:hover{
+    background: gray;
+}
+.postsItem{
+    display: flex;
+ align-items:center ;
+ justify-content: center;
+ list-style: none;
+}

@@ -1,0 +1,102 @@
+.write{
+    padding-top: 50px;
+    color:#fff;
+    font-family: 'Comfortaa', cursive;
+    
+}
+.writeImg{
+    margin-left: 180px;
+    width: 70vw;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.writeForm{
+    position: relative;
+}
+
+.writeFormGroup
+{
+    margin-left: 100px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+
+}
+
+.writeIcon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #989DA3;
+    cursor: pointer;
+}
+.writeInput{
+    font-size: 30px;
+    border-radius: 30px;
+    border:3px solid #fff;
+    background: transparent;
+    padding: 20px;
+    margin: 20px;
+   width: 600px;
+   color: #fff;
+   text-indent: 30px;
+   
+}
+.writeInput:focus{
+    outline: none;
+}
+.writeText{
+    font-size: 25px;
+}
+.writeSubmit{
+    position: absolute;
+   top:5px;
+    right: 50px;
+   width: 180px;
+    background-color:#0D8244 ;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 40px;
+    color: #fff;
+    border:2px solid #fff;
+    cursor: pointer;
+}
+.writeSubmit:hover{
+    background-color:#9EEB47 ;
+    transition: 0.5s all;
+    color: #000;
+}
+.writeStar{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 45px;
+    font-size: 30px;
+}
+.writeLabelRating{
+    margin-left: 30px;
+    padding: 20px;
+    font-size: 25px;
+}
+.writeRating{
+    margin-left: 20px;
+    margin-right: 5px;
+    border-radius: 20px;
+    background: transparent;
+    text-align: center;
+    border:2px solid #fff;
+    color:#fff;
+}
+.writeRating:focus{
+    outline: none;
+}
+.writeRatingIcon{
+    font-size: 23px;
+    color: #FAFF0B;
+}
