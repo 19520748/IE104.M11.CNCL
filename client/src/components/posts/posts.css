@@ -51,6 +51,7 @@
 }
 .postsListItem:hover{
     background: gray;
+    transition: 0.5s ease-in-out;
 }
 .postsItem{
     display: flex;

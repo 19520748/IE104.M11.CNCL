@@ -14,6 +14,7 @@ import {
   Link
 } from "react-router-dom";
 import { Context } from "./context/Context";
+import Footer from "./components/footer/Footer";
 function App() {
   const {user} = useContext(Context);
   return (
@@ -40,7 +41,7 @@ function App() {
             <Single />
           </Route>
         </Switch>
-
+        <Footer/>
 
 
 

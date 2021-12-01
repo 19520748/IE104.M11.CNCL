@@ -34,8 +34,8 @@
     margin-left: 90px;
     color: #fff;
     font-size: 15px;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
 }
  .sidebarItem .card-text i{
 color: yellow;
