@@ -11,7 +11,7 @@ export default function Settings() {
     const [birth,setBirth]=useState(JSON.parse(localStorage.getItem("user")).birth || null)
     const [address,setAddress]=useState(JSON.parse(localStorage.getItem("user")).address || null);
     const [favoredfood,setFavoredfood]=useState(JSON.parse(localStorage.getItem("user")).favoredfood || null);
-    const [password, setPassword] = useState(JSON.parse(localStorage.getItem("user")).password || null);
+    const [password, setPassword] = useState(JSON.parse(localStorage.getItem("user")).password);
     const [success, setSuccess] = useState(false);
     const PF ="http://localhost:5000/images/"
     const handleSubmit = async (e) => {
