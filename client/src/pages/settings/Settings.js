@@ -6,12 +6,12 @@ import "./settings.css"
 export default function Settings() {
     const { user,dispatch } = useContext(Context);
     const [file, setFile] = useState(null);
-    const [username, setUsername] = useState("");
-    const [email, setEmail] = useState("");
-    const [birth,setBirth]=useState("")
-    const [address,setAddress]=useState("");
-    const [favoredfood,setFavoredfood]=useState("");
-    const [password, setPassword] = useState("");
+    const [username, setUsername] = useState(JSON.parse(localStorage.getItem("user")).username || null);
+    const [email, setEmail] = useState(JSON.parse(localStorage.getItem("user")).email || null);
+    const [birth,setBirth]=useState(JSON.parse(localStorage.getItem("user")).birth || null)
+    const [address,setAddress]=useState(JSON.parse(localStorage.getItem("user")).address || null);
+    const [favoredfood,setFavoredfood]=useState(JSON.parse(localStorage.getItem("user")).favoredfood || null);
+    const [password, setPassword] = useState(JSON.parse(localStorage.getItem("user")).password || null);
     const [success, setSuccess] = useState(false);
     const PF ="http://localhost:5000/images/"
     const handleSubmit = async (e) => {
@@ -61,7 +61,7 @@ export default function Settings() {
                     <label>Ảnh đại diện</label>
                     <div className="settingsPP">
 
-                        <img src={file ? URL.createObjectURL(file) : PF + user.profilePic} />
+                        <img src={file ? URL.createObjectURL(file) : PF + user.profilePic} alt="avatar" />
                         <label htmlFor="fileInput">
                             <i className="settingsPPIcon fas fa-user-astronaut"></i>
                         </label>
