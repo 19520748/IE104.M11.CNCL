@@ -1,0 +1,36 @@
+.posts{
+    margin: 25px 10px;
+}
+#homeSlide{
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.carousel .carousel-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.postsListItem{
+    color: #ccc;
+    padding: 10px 15px;
+    margin-right: 8px;
+    font-family: 'Comfortaa', cursive;
+}
+.postsListItem:hover{
+    cursor: pointer;
+    border-radius: 14px;
+    background-color: #444;
+}
+.postsItem{
+    width: 100%;
+    float: left;
+    padding: 0;
+    list-style: none;   
+}
+.postsList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
