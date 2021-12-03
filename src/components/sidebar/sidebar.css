@@ -1,0 +1,58 @@
+.sidebar{
+    margin-top: 25px;
+}
+.sidebarTitle i{
+    color: orangered;
+    font-size: 30px;
+}
+ .sidebarItem{
+    border: 3px solid #fff;
+    padding-top: 10px;
+    border-radius: 20px;
+    padding-top: 10px;
+    
+}
+ .sidebarItem .card{
+    /* padding: 5px; */
+    position:relative;
+    background: #2BC53F;
+    border-radius: 10px;
+    
+   
+}
+ .sidebarItem h1{
+    font-family: 'Comfortaa', cursive;
+    color: #fff;
+   font-size: 25px;
+   text-align: center;
+   font-weight: 700;
+    
+}
+.sidebarItem .card-text{
+    position: relative;
+    margin-left: 90px;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    
+}
+ .sidebarItem .card-text i{
+color: yellow;
+font-size: 20px;
+padding: 5px;
+}
+.sidebarItem .card-text .fa-map-marker-alt{
+   color: #212529;
+    }
+
+.sidebarItem img{
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.card-text p{
+    font-size: 20px;
+}

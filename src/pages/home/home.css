@@ -1,0 +1,16 @@
+.main-container{
+    margin: auto;
+    min-height: 1700px;
+    display: flex;
+}
+
+.left-container{
+    width: 72%;
+    float: left;
+}
+.right-container{
+    width: calc(28% - 24px);
+    margin-left: 15px;
+    height: 500px;
+    float: left;
+}

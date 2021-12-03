@@ -1,0 +1,134 @@
+.settings{
+    display: flex;
+    color: #fff;
+}
+.settingsWrapper{
+    flex: 9;
+    padding: 20px;
+}
+.settingsTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.settingsUpdateTitle{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #9EEB47;
+}
+.settingsDeleteTitle{
+    color: coral;
+    cursor: pointer;
+}
+.settingsForm{
+    display: flex;
+    flex-direction: column;
+}
+.settingsPP{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+
+}
+.settingsPP >img{
+    width: 155px;
+    height: 155px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.settingsPPIcon{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #9EEB47;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color:#000;
+    font-size: 30px;
+    cursor: pointer;
+}
+.settingsForm > label{
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+.settingsForm >input{
+    border: 2px solid #fff;
+    background-color: transparent;
+    margin: 10px 0;
+    height: 40px;
+    border-radius: 20px;
+    text-indent: 20px;
+    font-size: 20px;
+    color:#fff;
+}
+.settingsForm >input:focus{
+    outline: none;
+}
+.settingsSubmit{
+    width: 200px;
+    height: 60px;
+    align-self: center;
+    border: 2px solid #fff;
+    background-color: #0A6937;
+    margin: 50px;
+    font-size: 25px;
+    border-radius: 30px;
+    padding: 10px;
+    color:#fff;
+    cursor:pointer;
+}
+.settingsSubmit:hover{
+    background-color: #9EEB47;
+    color: #000;
+    transition: 0.5s all;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    
+    margin-right: 30px;
+    opacity: 0.6;
+    filter: invert(0.8);
+    color: white;
+  }
+  .test{
+      display: grid;
+      grid-template-columns: 70% 30%;
+  }
+  .test > div > input{
+    border: 2px solid #fff;
+    background-color: transparent;
+    margin: 10px 0;
+    height: 40px;
+    border-radius: 20px;
+    text-indent: 20px;
+    font-size: 20px;
+    color:#fff;
+    width: 300px;
+}
+.test > div > input:focus{
+    outline: none;
+}
+.test > div > label{
+   
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+
+
+}
+::placeholder { 
+    color: white;
+   
+  }
+
+.UpdateSuccess{
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+
+}
