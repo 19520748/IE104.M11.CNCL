@@ -8,17 +8,12 @@
  .sidebarItem{
     border: 3px solid #fff;
     padding-top: 10px;
-    border-radius: 20px;
-    padding-top: 10px;
     
 }
  .sidebarItem .card{
     /* padding: 5px; */
     position:relative;
-    background: #2BC53F;
-    border-radius: 10px;
-    
-   
+    background: #3CAF4B;
 }
  .sidebarItem h1{
     font-family: 'Comfortaa', cursive;

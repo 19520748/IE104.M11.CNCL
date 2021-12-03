@@ -45,7 +45,7 @@ export default function Write() {
     return (
         <div className="write">
             {file && 
-            <img className="writeImg"
+            <img className="writeImg" alt="write"
             src={URL.createObjectURL(file)} />
             }
             

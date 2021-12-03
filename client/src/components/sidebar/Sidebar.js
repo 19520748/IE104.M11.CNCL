@@ -14,10 +14,10 @@ export default function Sidebar() {
 
                     <div className="card-body">
 
-                        <img src="images/image11.png" alt="" />
+                        <img src="images/neulaanh.jpg" alt="avatar" />
                         <div className="card-text">
-                            <h4>Gangnam Topokki</h4>
-                            <p><i className="fas fa-map-marker-alt"> </i>714 Sư Vạn Hạnh,<br />4.5/5<i className="fas fa-star"></i>
+                            <h4>neulaanh</h4>
+                            <p><i className="fas fa-map-marker-alt"> </i>Bình Dương<br />Độ hot: 4.5/5<i className="fas fa-star"></i>
                             </p>
                         </div>
                     </div>
@@ -26,10 +26,10 @@ export default function Sidebar() {
 
                     <div className="card-body">
 
-                        <img src="images/me1.png" alt="" />
+                        <img src="images/minhanhdaigia.jpg" alt="avatar" />
                         <div className="card-text">
-                            <h4>Chè mè đen & Bánh</h4>
-                            <p><i className="fas fa-map-marker-alt"> </i>149 Nguyễn Thái Bình,<br />4.5/5<i className="fas fa-star"></i>
+                            <h4>minhanhdaigia</h4>
+                            <p><i className="fas fa-map-marker-alt"> </i>Tầng 81, Landmark 81<br />Độ hot: 4.5/5<i className="fas fa-star"></i>
                             </p>
                         </div>
                     </div>
@@ -38,10 +38,10 @@ export default function Sidebar() {
 
                     <div className="card-body">
 
-                        <img src="images/image13.png" alt="" />
+                        <img src="images/bnn.jpg" alt="avatar" />
                         <div className="card-text">
-                            <h4>UyênUyên coffee</h4>
-                            <p><i className="fas fa-map-marker-alt"> </i>Nhà Nam...<br />10/10<i className="fas fa-star"></i>
+                            <h4>bnn</h4>
+                            <p><i className="fas fa-map-marker-alt"> </i>Quận 11<br />Độ hot: 4.5/5<i className="fas fa-star"></i>
                             </p>
                         </div>
                     </div>
@@ -50,10 +50,10 @@ export default function Sidebar() {
 
                     <div className="card-body">
 
-                        <img src="images/image14.png" alt="" />
+                        <img src="images/dhnbroken.jpg" alt="avatar" />
                         <div className="card-text">
-                            <h4>Lẩu cù lao</h4>
-                            <p><i className="fas fa-map-marker-alt"> </i>410 Nguyễn Xí,<br />4.3/5<i className="fas fa-star"></i>
+                            <h4>dhnbroken</h4>
+                            <p><i className="fas fa-map-marker-alt"> </i>Bốn bề là nhà<br />Độ hot: 4.3/5<i className="fas fa-star"></i>
                             </p>
                         </div>
                     </div>
