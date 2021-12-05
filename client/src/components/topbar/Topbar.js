@@ -47,6 +47,9 @@ export default function Topbar() {
                                     <li className="nav-link">
                                         <Link to="/write" className="link">Tạo bài biết</Link>
                                     </li>
+                                    <li className="nav-link">
+                                        <Link to="/about" className="link">Giới thiệu về review blog</Link>
+                                    </li>
 
 
 
