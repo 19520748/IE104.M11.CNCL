@@ -1,28 +1,28 @@
 .write{
+    height: 92vh;
+    min-height: 1200px;
     padding-top: 50px;
     color:#fff;
     font-family: 'Comfortaa', cursive;
-    
 }
 .writeImg{
-    margin-left: 180px;
-    width: 70vw;
+    width: 96%;
+    margin: 20px;
     height: 350px;
     border-radius: 10px;
     object-fit: cover;
 }
 .writeForm{
     position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
 }
 
 .writeFormGroup
 {
-    margin-left: 100px;
-    display: grid;
+    margin-left: 20px;
     align-items: center;
-    grid-template-columns: 50% 50%;
-    justify-content: center;
-
 }
 
 .writeIcon{
@@ -44,9 +44,9 @@
     background: transparent;
     padding: 20px;
     margin: 20px;
-   width: 600px;
-   color: #fff;
-   text-indent: 30px;
+    width: 600px;
+    color: #fff;
+    text-indent: 30px;
    
 }
 .writeInput:focus{
@@ -56,9 +56,6 @@
     font-size: 25px;
 }
 .writeSubmit{
-    position: absolute;
-   top:5px;
-    right: 50px;
    width: 180px;
     background-color:#0D8244 ;
     padding: 15px;
@@ -80,13 +77,10 @@
     font-size: 30px;
 }
 .writeLabelRating{
-    margin-left: 30px;
-    padding: 20px;
-    font-size: 25px;
+    margin: 20px;
+    font-size: 30px;
 }
 .writeRating{
-    margin-left: 20px;
-    margin-right: 5px;
     border-radius: 20px;
     background: transparent;
     text-align: center;

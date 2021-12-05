@@ -28,53 +28,46 @@ export default function Register() {
     };
     return (
         <div className="register">
-            <div className="registerColumn">
-                <div className="registerColumn1">
-                    <img src="https://media.istockphoto.com/photos/slice-of-pizza-cheese-crust-seafood-topping-sauce-with-bell-pepper-picture-id835271096?k=20&m=835271096&s=612x612&w=0&h=slpW4QOVnDLlv6ayevlxwtcOIKCjTvOwxe7BZBOMmvc=" />
+            <form className="registerForm" onSubmit={handleSubmit}>
+                <span className="registerTitle">Đăng kí</span>
+                {error && <span className="errorAppear">Oops...! Có vẻ như tài khoản đã tồn tại rồi <i className="fas fa-heart-broken"></i></span>}
+                <div style={{ margin: 8 }}>
+                    <i className="registerIcon fas fa-user-astronaut"></i>
+                    <input type="text" placeholder="Username của bạn" required className="registerInput"
+                        onChange={e => setUsername(e.target.value)}
+                    />
                 </div>
-                <div className="registerColumn2">
-
-                    <form className="registerForm" onSubmit={handleSubmit}>
-                        <span className="registerTitle">Đăng kí</span>
-                        <label>Username</label>
-                        <i className="registerUserIcon fas fa-user-astronaut"></i>
-                        <input type="text" placeholder="Username của bạn" className="registerInput"
-                            onChange={e => setUsername(e.target.value)}
-                        />
-                        <label>Ngày sinh</label>
-                        <i className="registerBirthIcon fas fa-birthday-cake"></i>
-                        <input type="text" placeholder="Ngày sinh của bạn" className="registerInput"
-                            onChange={e => setBirth(e.target.value)}
-                        />
-                        <label>Email</label>
-                        <i className="registerEmailIcon fas fa-envelope"></i>
-                        <input type="text" placeholder="Email của bạn" className="registerInput"
-                            onChange={e => setEmail(e.target.value)}
-                        />
-                        <label>Địa chỉ</label>
-                        <i className="registerAddressIcon fas fa-map-marker-alt"></i>
-                        <input type="text" placeholder="Địa chỉ" className="registerInput"
-                            onChange={e => setAddress(e.target.value)} />
-
-                        <label>Món ăn yêu thích</label>
-                        <i className="registerFavorIcon fas fa-pizza-slice"></i>
-                        <input type="text" placeholder="Món ăn yêu thích" className="registerInput"
-                            onChange={e => setFavoredfood(e.target.value)} />
-                        <label>Password</label>
-                        <i className="registerPasswordIcon fas fa-lock"></i>
-                        <input type="password" placeholder="Mật khẩu" className="registerInput"
-                            onChange={e => setPassword(e.target.value)} />
-                        <button className="registerButton" type="submit">Đăng kí</button>
-                        {error && <span className="errorAppear">Oops...! Có vẻ như tài khoản đã tồn tại rồi <i className="fas fa-heart-broken"></i></span>}
-                    </form>
-                    {/* <a className="registerLoginButton"> */}
-                    <Link to="/login" className="link registerLoginButton">Đăng nhập</Link>
-
-                    {/* </a> */}
+                <div style={{ margin: 8 }}>
+                    <i className="registerIcon fas fa-birthday-cake"></i>
+                    <input type="text" placeholder="Ngày sinh của bạn" required className="registerInput"
+                        onChange={e => setBirth(e.target.value)}
+                    />
                 </div>
-
-            </div>
-
+                <div style={{ margin: 8 }}>
+                    <i className="registerIcon fas fa-envelope"></i>
+                    <input type="text" placeholder="Email của bạn" required className="registerInput"
+                        onChange={e => setEmail(e.target.value)}
+                    />
+                </div>
+                <div style={{ margin: 8 }}>
+                    <i className="registerIcon fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Địa chỉ" required className="registerInput"
+                        onChange={e => setAddress(e.target.value)}
+                    />
+                </div>
+                <div style={{ margin: 8 }}>
+                    <i className="registerIcon fas fa-pizza-slice"></i>
+                    <input type="text" placeholder="Món ăn yêu thích" required className="registerInput"
+                        onChange={e => setFavoredfood(e.target.value)}
+                    />
+                </div>
+                <div style={{ margin: 8 }}>
+                    <i className="registerIcon fas fa-lock"></i>
+                    <input type="password" placeholder="Mật khẩu" minlength="8" required className="registerInput"
+                        onChange={e => setPassword(e.target.value)} />
+                </div>
+                <button className="registerButton" type="submit">Đăng kí</button>
+            </form>
         </div>
     )
 }

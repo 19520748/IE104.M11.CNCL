@@ -4,16 +4,16 @@ import Sidebar from '../../components/sidebar/Sidebar'
 import { Context } from '../../context/Context'
 import "./settings.css"
 export default function Settings() {
-    const { user,dispatch } = useContext(Context);
+    const { user, dispatch } = useContext(Context);
     const [file, setFile] = useState(null);
     const [username, setUsername] = useState(JSON.parse(localStorage.getItem("user")).username || null);
     const [email, setEmail] = useState(JSON.parse(localStorage.getItem("user")).email || null);
-    const [birth,setBirth]=useState(JSON.parse(localStorage.getItem("user")).birth || null)
-    const [address,setAddress]=useState(JSON.parse(localStorage.getItem("user")).address || null);
-    const [favoredfood,setFavoredfood]=useState(JSON.parse(localStorage.getItem("user")).favoredfood || null);
+    const [birth, setBirth] = useState(JSON.parse(localStorage.getItem("user")).birth || null)
+    const [address, setAddress] = useState(JSON.parse(localStorage.getItem("user")).address || null);
+    const [favoredfood, setFavoredfood] = useState(JSON.parse(localStorage.getItem("user")).favoredfood || null);
     const [password, setPassword] = useState(JSON.parse(localStorage.getItem("user")).password);
     const [success, setSuccess] = useState(false);
-    const PF ="http://localhost:5000/images/"
+    const PF = "http://localhost:5000/images/"
     const handleSubmit = async (e) => {
         e.preventDefault();
         dispatch({ type: "UPDATE_START" });
@@ -45,8 +45,8 @@ export default function Settings() {
         }
     };
     return (
-        <div className="settings">
-            <div className="settingsWrapper">
+        <div className="settings container">
+            <div className="left-container">
                 <div className="settingsTitle">
                     <span className="settingsUpdateTitle">
                         Thông tin cá nhân
@@ -54,11 +54,9 @@ export default function Settings() {
                     <span className="settingsDeleteTitle">
                         Delete Account
                     </span>
-
                 </div>
-
                 <form className="settingsForm" onSubmit={handleSubmit}>
-                    <label>Ảnh đại diện</label>
+                    <label style={{ textAlign: 'center' }}>Ảnh đại diện</label>
                     <div className="settingsPP">
 
                         <img src={file ? URL.createObjectURL(file) : PF + user.profilePic} alt="avatar" />
@@ -86,13 +84,14 @@ export default function Settings() {
                     <label>Món ăn yêu thích</label>
                     <input type="text" placeholder={user.favoredfood} onChange={(e) => setFavoredfood(e.target.value)} />
                     <label>Password</label>
-                    <input type="password" onChange={(e) => setPassword(e.target.value)} />
-                    <button className="settingsSubmit" type="submit">Cập nhật</button>
+                    <input type="password" minlength="8" onChange={(e) => setPassword(e.target.value)} />
                     {success && <span className="UpdateSuccess">Cập nhật thành công !</span>}
-
+                    <button className="settingsSubmit" type="submit">Cập nhật</button>
                 </form>
             </div>
-            <Sidebar />
+            <div className="right-container">
+                <Sidebar />
+            </div>
         </div>
     )
 }

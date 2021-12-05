@@ -25,7 +25,7 @@
 }
 .sidebarItem .card-text{
     position: relative;
-    margin-left: 90px;
+    margin-left: 95px;
     color: #fff;
     font-size: 15px;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
@@ -47,7 +47,9 @@ padding: 5px;
     margin-top: 10px;
     align-items: center;
 }
-
+.card-body img{
+    border-radius: 15px;    
+}
 .card-text p{
     font-size: 20px;
 }

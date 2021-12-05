@@ -1,7 +1,4 @@
 .grid {
-    width: 2000px;
-    max-width: 100%;
-    margin: 0 auto;
     background: #0D8244;
     font-family: 'Comfortaa', cursive;
 
@@ -33,7 +30,8 @@
 }
 .footer__heading{
     color: #ffffff;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .footer__icon{
@@ -73,21 +71,13 @@
 .footer-item{
     color: #ffffff;
     font-size: 18px;
+    font-weight: normal;
     text-decoration: none;
     list-style: none;
     line-height: 1.6;
-}
-.footer-item__link{
-    text-decoration: none;
-    color: #ffffff;
 }
 .footer-item i{
     padding-right: 22px;
     width: 7px;
     height: 7px;
-}
-.footer-item__link:hover{
-    cursor: pointer;
-    text-decoration: none;
-    color: #fff;
 }

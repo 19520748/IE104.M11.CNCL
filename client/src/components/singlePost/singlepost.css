@@ -57,6 +57,10 @@ hr{
 .singlePostIcon:last-child{
     color: #FF710B;
 }
+.singlePostRate{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
 .singlePostRate i{
     font-size: 25px;
     padding-left: 10px;
@@ -67,16 +71,11 @@ hr{
     font-family: 'Comfortaa', cursive;
     color: lightslategray;
     font-size: 22px;
-    position: absolute;
-    margin-left: 490px;
-    
     border: none;
 }
 .singlePostRateInput:focus{
     outline: none;
 }
-
-
 .singlePostAddress{
     font-family: 'Comfortaa', cursive;
     font-size: 27px;
@@ -95,7 +94,7 @@ hr{
     outline: none;
 }
 .singlePostInfo{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
     font-size: 20px;
@@ -136,4 +135,16 @@ hr{
     cursor: pointer;
     align-self: center;
     margin-top: 20px;
+}
+.rate{
+    margin-bottom: 15px;
+    color: lightslategray;
+}
+.rate input{
+    width: 50px;
+    text-align: center;
+}
+.rate span{
+    font-size: 20px;
+    margin-right: 10px;
 }

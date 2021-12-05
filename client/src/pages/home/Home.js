@@ -23,7 +23,7 @@ export default function Home() {
         <>
 
             <Header />
-            <div className="main-container container">
+            <div className="home container">
                 <div className="left-container">
                     <Posts posts={posts} />
                 </div>

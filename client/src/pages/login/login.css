@@ -1,65 +1,56 @@
 
 .login{
-    height: 100vh;
-    width: 100%;
-    color: #fff;
+    height: 92vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+      ),
+    url("https://previews.123rf.com/images/jagcz/jagcz1702/jagcz170200137/72504515-asian-food-served-on-old-wooden-table-top-view-space-for-text-chinese-and-vietnamese-cuisine-set-.jpg") no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
     align-items: center;
     font-family: 'Comfortaa', cursive;
-}
-
-.loginColumn{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-.loginRegisterButton{
-    float: right;
-}
-.loginColumn2{
-    align-items: center;
-}
+    }
 .loginTitle{
     align-self: center;
     align-items: center;
     font-size: 50px;
-    color: #3CAF4B;
+    color: #FFF;
+    margin-bottom: 20px;
 }
 .loginForm{
+    padding-top: 20vh;
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-}
-.loginForm > label{
-   font-size: 20px;
-    margin: 10px 0;
 }
 .loginInput{
-    padding: 10px;
-    height: 50px;
-    width: 500px;
+    position: relative;
+    padding: 1em 3em 1em 1em;
+    width: 400px;
     border-radius: 30px;
-    background-color: transparent;
-    border:2px solid #fff;
-    color: white;
-    text-indent: 50px;
-
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.35);
+    color: #FFF;
+    text-indent: 30px;
+}
+::placeholder{
+    color: #DDD;
 }
 .loginInput:focus{
     outline: none;
 }
 .loginButton{
-    margin-top: 50px;
     cursor: pointer;
     background-color: #0A6937;
-    border:2px solid #fff;
-    margin: 50px;
-    font-size: 25px;
-    border-radius: 50px;
-    color: white;
-    margin-bottom: 50px;
-    width: 500px;
-    height: 80px;
-    
+    color: #fff;
+    padding: .7em 0;
+    border: 1px solid #FFF;
+    outline: none;
+    font-size: 20px;
+    border-radius: 30px;
+    width: 200px;
 }
 .loginButton:hover{
     background-color: #9EEB47;
@@ -71,35 +62,20 @@
     background-color:gray ;
 }
 .loginRegisterButton{
-    margin-top: 30px;
     cursor: pointer;
     text-decoration: none;
-    padding: 30px;
-    font-size: 30px;
-   color:#0A6937;
+    font-size: 20px;
+    color:#fff;
     font-weight: 700;
-    margin-bottom: 50px;
-    margin-right: 100px;
+    width: 80px;
+    margin: 20px 0 20px 320px;
 }
 .loginRegisterButton:hover{
     color: #9EEB47;
 }
-.loginColumn1 > img{
-    width: 550px;
-    height: 480px;
-    margin: 100px;
-    border-radius: 50px;
-
-}
-.loginPasswordIcon{
+.loginIcon{
     position: absolute;
-    margin-top: 240px;
+    margin: 18px;
     font-size: 20px;
-    margin-right: 430px;
-}
-.loginUserIcon{
-    position: absolute;
-    font-size: 20px;
-    margin-top: 140px;
-    margin-right: 430px;
+    color: red;
 }

@@ -43,7 +43,7 @@ export default function SinglePost() {
     const handleUpdate = async () => {
         try {
             await axios.put("/posts/" + path, {
-                username: user.username, title: title, desc: desc, address: address,rating:rating
+                username: user.username, title: title, desc: desc, address: address, rating: rating
             });
             window.location.reload();
             setUpdateMode(false);
@@ -55,8 +55,8 @@ export default function SinglePost() {
         <div className="singlePost">
             <div className="singlePostWrapper">
                 {post.photo && <img className="singlePostImg" src={PF + post.photo} />}
-                {
-                    updateMode ? <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="singlePostTitleInput" autoFocus /> : (
+                {updateMode ? <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="singlePostTitleInput" autoFocus />
+                    : (
                         <h1 className="singlePostTitle">
                             {title}
                             {post.username === user?.username &&
@@ -65,32 +65,32 @@ export default function SinglePost() {
                                     <i className="singlePostIcon fas fa-trash-alt" onClick={handleDelete}></i>
                                 </div>
                             }
-
                             <hr />
                         </h1>
                     )
                 }
-
-
                 <div className="singlePostInfo">
                     <span className="singlePostAuthor">Tác giả :&nbsp;
                         <Link to={`/?user=${post.username}`} className="link">
                             <b>{post.username}</b>
                         </Link></span>
-                    {updateMode ? (<>
-                        <textarea type="text" className="singlePostRateInput" id="rating" cols="2" rows="1" value={rating} 
-                        onChange={(e) => setRating(e.target.value)}/>
-                        <span>/5<i className="fas fa-star"></i></span>
-                        </>
-                    ) :
-                        (<span className="singlePostRate">{post.rating}/5<i className="fas fa-star"></i></span>)}
-
                     <span className="singlePostDate">{new Date(post.createdAt).toDateString()}</span>
                 </div>
-                {updateMode ? (<textarea className="singlePostAddressInput" value={address}
+                {updateMode ? (<>
+                    <div className="d-flex rate">
+                        <span>Đánh giá:</span>
+                        <input type="text" className="singlePostRateInput" id="rating" cols="2" rows="1" value={rating}
+                            onChange={(e) => setRating(e.target.value)} />
+                        <span style={{ fontSize: 20 }}>/5<i style={{ color: 'yellow' }} className="fas fa-star"></i></span>
+                    </div>
+                </>
+                ) :
+                    (<span className="singlePostRate">Đánh giá: {post.rating}/5<i className="fas fa-star"></i></span>)
+                }
+                {updateMode ? (<input className="singlePostAddressInput" value={address}
                     onChange={(e) => setAddress(e.target.value)} />) : (<span className="singlePostAddress">Địa chỉ : {address}</span>)}
                 <br />
-                {updateMode ? (<textarea className="singlePostDescInput" rows="8" value={desc} onChange={(e) => setDesc(e.target.value)} />) : (
+                {updateMode ? (<input className="singlePostDescInput" rows="8" value={desc} onChange={(e) => setDesc(e.target.value)} />) : (
                     <p className="singlePostDesc">
 
                         {desc}

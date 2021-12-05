@@ -1,69 +1,58 @@
 
 .register{
-    height: 120vh;
-    min-height: 150vh;
-    width: 100%;
+    height: 92vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+      ),
+    url("https://c1.wallpaperflare.com/preview/893/920/849/knife-food-wood-table.jpg") no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
     color: #fff;
     align-items: center;
     font-family: 'Comfortaa', cursive;
-}
-
-.registerColumn{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-.registerLoginButton{
-    float: right;
     
-   
-}
-
-.registerColumn2{
-    align-items: center;
 }
 .registerTitle{
     align-self: center;
     align-items: center;
     font-size: 50px;
-    color: #3CAF4B;
+    color: #FFF;
+    margin-bottom: 20px;
 }
 .registerForm{
+    padding-top: 5vh;
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-.registerForm > label{
-   font-size: 20px;
-    margin: 10px 0;
 }
 .registerInput{
-    padding: 10px;
-    height: 50px;
-    width: 500px;
+    padding: 1em 3em 1em 1em;
+    width: 400px;
     border-radius: 30px;
-    background-color: transparent;
-    border:2px solid #fff;
-    color: white;
-    text-indent: 50px;
-
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.35);
+    color: #FFF;
+    text-indent: 30px;
+}
+::placeholder{
+    color: #DDD;
 }
 .registerInput:focus{
     outline: none;
 }
 .registerButton{
-    margin-top: 50px;
     cursor: pointer;
     background-color: #0A6937;
-    border:2px solid #fff;
-    margin: 50px;
-    font-size: 25px;
-    border-radius: 50px;
-    color: white;
-    margin-bottom: 50px;
-    width: 500px;
-    height: 80px;
+    color: #fff;
+    padding: .7em 0;
+    margin: 20px;
+    border: 1px solid #FFF;
+    outline: none;
+    font-size: 20px;
+    border-radius: 30px;
+    width: 200px;
     
 }
 .registerButton:hover{
@@ -71,71 +60,16 @@
     color: #000;
     transition: 0.5s all;
 }
-.registerLoginButton{
-    /* margin-top: 30px; */
-    cursor: pointer;
-    text-decoration: none;
-    padding: 30px;
-    font-size: 30px;
-   color:#0A6937;
-    font-weight: 700;
-   
-    margin-bottom: 50px;
-    margin-right: 100px;
-}
-.registerLoginButton:hover{
-    color: #9EEB47;
-}
-.registerColumn1 > img{
-    width: 550px;
-    height: 480px;
-    margin: 100px;
-    border-radius: 50px;
-
-}
-.registerAddressIcon{
+.registerIcon{
     position: absolute;
-    margin-top: 440px;
+    margin: 18px;
     font-size: 20px;
-    margin-right: 430px;
-}
-.registerEmailIcon{
-    position: absolute;
-    font-size: 20px;
-    margin-right: 430px;
-    margin-top: 340px;
-}
-.registerBirthIcon{
-    position: absolute;
-    font-size: 20px;
-    margin-top: 238px;
-    margin-right: 430px;
-}
-.registerUserIcon{
-    position: absolute;
-    font-size: 20px;
-    margin-top: 140px;
-    margin-right: 430px;
-}
-.registerFavorIcon{
-    position: absolute;
-    font-size: 20px;
-    margin-top: 540px;
-    margin-right: 430px;
-}
-.registerPasswordIcon{
-    position: absolute;
-    font-size: 20px;
-    margin-right: 430px;
-    margin-top: 640px;
+    color: red;
 }
 .errorAppear{
     color: #fff;
-    padding: 20px;
-    margin: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .errorAppear i{
     color: orangered;
-    
 }

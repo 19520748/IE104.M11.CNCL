@@ -1,15 +1,25 @@
 .settings{
+    margin: auto;
+    height: 92vh;
+    min-height: 1100px;
     display: flex;
     color: #fff;
 }
-.settingsWrapper{
-    flex: 9;
-    padding: 20px;
+.left-container{
+    width: 72%;
+    float: left;
+}
+.right-container{
+    width: calc(28% - 24px);
+    margin-left: 30px;
+    height: 500px;
+    float: left;
 }
 .settingsTitle{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 10px;
 }
 .settingsUpdateTitle{
     font-size: 30px;
@@ -30,7 +40,7 @@
     margin: 10px 0;
     justify-content: center;
     align-items: center;
-
+    margin-left: 60px;
 }
 .settingsPP >img{
     width: 155px;
@@ -54,17 +64,17 @@
 .settingsForm > label{
     font-size: 20px;
     margin-top: 20px;
-
 }
 .settingsForm >input{
-    border: 2px solid #fff;
-    background-color: transparent;
+    border: 1px solid #fff;
     margin: 10px 0;
-    height: 40px;
-    border-radius: 20px;
+    padding: 10px;
+    color:#fff;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
     text-indent: 20px;
     font-size: 20px;
-    color:#fff;
+    text-indent: 10px;
 }
 .settingsForm >input:focus{
     outline: none;
@@ -75,7 +85,7 @@
     align-self: center;
     border: 2px solid #fff;
     background-color: #0A6937;
-    margin: 50px;
+    margin: 40px;
     font-size: 25px;
     border-radius: 30px;
     padding: 10px;
@@ -94,32 +104,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0.6;
     filter: invert(0.8);
     color: white;
-  }
-  .test{
-      display: grid;
-      grid-template-columns: 70% 30%;
-  }
-  .test > div > input{
-    border: 2px solid #fff;
-    background-color: transparent;
+}
+.test{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.test > div > input{
+    border: 1px solid #fff;
     margin: 10px 0;
-    height: 40px;
-    border-radius: 20px;
+    padding: 10px;
+    color:#fff;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
     text-indent: 20px;
     font-size: 20px;
-    color:#fff;
-    width: 300px;
+    text-indent: 10px;
 }
 .test > div > input:focus{
     outline: none;
 }
 .test > div > label{
-   
     display: flex;
     flex-direction: column;
     font-size: 20px;
-
-
 }
 ::placeholder { 
     color: white;
@@ -127,8 +134,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 
 .UpdateSuccess{
+    margin: 10px;
     color: #fff;
     font-family: 'Comfortaa', cursive;
     font-size: 20px;
-
+    text-align: center;
 }
