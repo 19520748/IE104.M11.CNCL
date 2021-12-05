@@ -4,7 +4,6 @@
     position: sticky;
     margin-bottom: 70px;
     z-index: 999;
-    
 }
 
 .TC-navbar.r-nav{
@@ -15,6 +14,9 @@
 
 .TC-navbar .navbar-brand{
     padding: 5px;
+}
+.container-fluid{
+    width: 1200px;
 }
 .TC-navbar .container-fluid{
     background: #0D8244 !important;

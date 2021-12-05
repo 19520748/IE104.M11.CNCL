@@ -14,7 +14,7 @@ export default function Footer() {
                         <div className="grid__column-2-4">
                             <div className="footer">
                                 <div className="footer__icon">
-                                    <Link to="/" className="logo-img" style={{ textDecoration: 'none' }} href="/"><img src="images/reviewlogo1.png" alt="Logo Review" />
+                                <Link to="/" className="logo-img" style={{ textDecoration: 'none' }} href="/"><img src="images/reviewlogo1.png" alt="Logo Review" />
                                         <h5 style={{ margin: "10px" }}>Review</h5>
                                     </Link>
                                     <p>Ăn khắp nơi <br /> Chơi khắp chốn</p>

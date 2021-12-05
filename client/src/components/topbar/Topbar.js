@@ -3,6 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { Context } from '../../context/Context';
 import "./topbar.css"
+
 export default function Topbar() {
     const PF = "http://localhost:5000/images/"
     const { user, dispatch } = useContext(Context);
@@ -11,12 +12,12 @@ export default function Topbar() {
     }
 
     return (
+       
         <div className="NavbarAfterLogin">
-
             <nav className="navbar  TC-sticky fixed-top r-nav TC-navbar">
                 <div className="container-fluid">
                     {/* <a href="#" className="navbar-brand"> */}
-                    <Link to="/" className="link navbar-brand">
+                    <Link to="/" className="link navbar-brand" href="#">
                         <img src="images/review-logo-white.png" />
                     </Link>
                     {/* </a> */}
@@ -81,7 +82,7 @@ export default function Topbar() {
 
                         </ul>
                     </div> */}
-
+                    
                 </div>
 
 

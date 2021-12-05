@@ -1,5 +1,6 @@
 import React from 'react'
 import "./sidebar.css"
+import { Link } from 'react-router-dom';
 
 
 export default function Sidebar() {
@@ -16,7 +17,10 @@ export default function Sidebar() {
 
                         <img src="images/neulaanh.jpg" alt="avatar" />
                         <div className="card-text">
-                            <h4>neulaanh</h4>
+                        <Link to="/?user=neulaanh" style={{ textDecoration: 'none' }} className="hot-reviewer">
+                            <h4 style={{ textDecoration: 'none' }}>neulaanh</h4>
+                        </Link>
+                            
                             <p><i className="fas fa-map-marker-alt"> </i>Bình Dương<br />Độ hot: 4.5/5<i className="fas fa-star"></i>
                             </p>
                         </div>
@@ -28,7 +32,9 @@ export default function Sidebar() {
 
                         <img src="images/minhanhdaigia.jpg" alt="avatar" />
                         <div className="card-text">
-                            <h4>minhanhdaigia</h4>
+                        <Link to="/?user=minhanhdaigia" style={{ textDecoration: 'none' }} className="hot-reviewer">
+                            <h4 style={{ textDecoration: 'none' }}>minhanhdaigia</h4>
+                        </Link>
                             <p><i className="fas fa-map-marker-alt"> </i>Tầng 81, Landmark 81<br />Độ hot: 4.5/5<i className="fas fa-star"></i>
                             </p>
                         </div>
@@ -40,7 +46,9 @@ export default function Sidebar() {
 
                         <img src="images/bnn.jpg" alt="avatar" />
                         <div className="card-text">
-                            <h4>bnn</h4>
+                        <Link to="/?user=bnn" style={{ textDecoration: 'none' }} className="hot-reviewer">
+                            <h4 style={{ textDecoration: 'none' }}>bnn</h4>
+                        </Link>
                             <p><i className="fas fa-map-marker-alt"> </i>Quận 11<br />Độ hot: 4.5/5<i className="fas fa-star"></i>
                             </p>
                         </div>
@@ -52,7 +60,9 @@ export default function Sidebar() {
 
                         <img src="images/dhnbroken.jpg" alt="avatar" />
                         <div className="card-text">
-                            <h4>dhnbroken</h4>
+                        <Link to="/?user=dhnbroken" style={{ textDecoration: 'none' }} className="hot-reviewer">
+                            <h4 style={{ textDecoration: 'none' }}>dhnbroken</h4>
+                        </Link>
                             <p><i className="fas fa-map-marker-alt"> </i>Bốn bề là nhà<br />Độ hot: 4.3/5<i className="fas fa-star"></i>
                             </p>
                         </div>
@@ -82,7 +92,6 @@ export default function Sidebar() {
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     )

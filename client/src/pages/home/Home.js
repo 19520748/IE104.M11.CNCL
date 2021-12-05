@@ -23,6 +23,7 @@ export default function Home() {
         <>
 
             <Header />
+        <div className="grid">
             <div className="home container">
                 <div className="left-container">
                     <Posts posts={posts} />
@@ -31,6 +32,7 @@ export default function Home() {
                     <Sidebar />
                 </div>
             </div>
+        </div>
         </>
     )
 }

@@ -1,7 +1,8 @@
+.page-footer{
+    background-color: #0D8244
+}
 .grid {
-    background: #0D8244;
     font-family: 'Comfortaa', cursive;
-
 }
 
 .grid__full_width {
