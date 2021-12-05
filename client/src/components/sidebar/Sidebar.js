@@ -7,7 +7,7 @@ export default function Sidebar() {
         <div className="sidebar">
             <div className="sidebarItem">
                 <span className="sidebarTitle">
-                    <h1>Địa điểm nổi bật  <i className="fas fa-map-pin"></i></h1>
+                    <h1>Reviewer nổi bật <i className="fas fa-map-pin"></i></h1>
                     
                 </span>
                 <div className="card">
