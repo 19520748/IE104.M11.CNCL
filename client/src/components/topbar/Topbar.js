@@ -21,7 +21,9 @@ export default function Topbar() {
 
                     <div className="navbar-nav col-md-5 ms-auto ">
                         <i className="fas fa-search icon-sreach"></i>
-                        <input type="text" className="form-control" id="Searchbox" placeholder="Tìm kiếm địa điểm..." />
+                        <form>
+                        <input type="text" name="user" className="form-control" id="Searchbox" placeholder="Tìm kiếm reviewer..." />
+                        </form>
                     </div>
 
                     {user ? (
