@@ -1,8 +1,8 @@
 
 .register{
     background: linear-gradient(
-        rgba(0, 0, 0, 0.4), 
-        rgba(0, 0, 0, 0.4)
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
       ),
     url("https://scontent.xx.fbcdn.net/v/t1.15752-9/p403x403/263700011_3047959162145757_6429880530861393661_n.png?_nc_cat=104&ccb=1-5&_nc_sid=aee45a&_nc_ohc=Ud_k-DI58qgAX99Rhke&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=d7b26a8056e83eda12cd12a06697c4fe&oe=61D34686") no-repeat;
     background-size: cover;
