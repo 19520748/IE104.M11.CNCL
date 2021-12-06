@@ -8,11 +8,11 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Footer from "./components/footer/Footer"
 import React, { useContext } from "react";
+import About from "./pages/About us/About";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import { Context } from "./context/Context";
 function App() {
@@ -39,6 +39,9 @@ function App() {
           </Route>
           <Route path="/post/:postId">
             <Single />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
         </Switch>
         <Footer />

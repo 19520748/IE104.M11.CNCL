@@ -1,5 +1,4 @@
-import axios from 'axios';
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom';
 import { Context } from '../../context/Context';
 import "./topbar.css"
@@ -18,7 +17,7 @@ export default function Topbar() {
                 <div className="container-fluid">
                     {/* <a href="#" className="navbar-brand"> */}
                     <Link to="/" className="link navbar-brand" href="#">
-                        <img src="images/review-logo-white.png" />
+                        <img src="images/review-logo-white.png" alt="logo" />
                     </Link>
                     {/* </a> */}
 
@@ -42,7 +41,7 @@ export default function Topbar() {
                             <div className="collapse navbar-collapse" id="collapsibleNavbar">
                                 <ul className="navbar-nav ms-auto">
                                     <li className="nav-link">
-                                        <a className="link" onClick={handleLogout}>{user && ""}Log out</a>
+                                        <a href="/"className="link" onClick={handleLogout}>{user && ""}Log out</a>
                                     </li>
                                     <li className="nav-link">
                                         <Link to="/settings" className="link">Profile</Link>

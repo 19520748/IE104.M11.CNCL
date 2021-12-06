@@ -34,19 +34,19 @@ export default function Footer() {
                             <h3 className="footer__heading">Liên hệ</h3>
                             <dl className="footer-list">
                                 <dt className="footer-item">
-                                    <a href="https://www.facebook.com/reviewuitie104" target="_blank" className="link">
+                                    <a href="https://www.facebook.com/reviewuitie104" target="_blank" rel="noopener noreferrer" className="link">
                                         <i className="fab fa-facebook"></i>
                                         Facebook
                                     </a>
                                 </dt>
                                 <dt className="footer-item">
-                                    <a href="https://www.instagram.com/_suchamay/" target="_blank" className="link">
+                                    <a href="https://www.instagram.com/_suchamay/" target="_blank" rel="noopener noreferrer" className="link">
                                         <i className="fab fa-instagram"></i>
                                         Instagram
                                     </a>
                                 </dt>
                                 <dt className="footer-item">
-                                    <a href="" className="link">
+                                    <a href="https://mail.google.com/mail/u/0/?hl=en&tf=cm&fs=1&to=bdfnatsu@gmail.com" target="_blank" rel="noopener noreferrer" className="link">
                                         <i className="far fa-envelope"></i>
                                         Gmail: best@review.com
                                     </a>
@@ -57,22 +57,21 @@ export default function Footer() {
                             <h3 className="footer__heading">Chính sách</h3>
                             <dl className="footer-list">
                                 <dt className="footer-item">
-                                    <a href="" className="link">
+                                    <a href="https://www.facebook.com/reviewuitie104" target="_blank" rel="noopener noreferrer" className="link">
                                         <i className="far fa-bell"></i>
                                         Chính sách chung
                                     </a>
                                 </dt>
                                 <dt className="footer-item">
-                                    <a href="" className="link">
+                                    <a href="https://www.facebook.com/reviewuitie104" target="_blank" rel="noopener noreferrer" className="link">
                                         <i className="far fa-user"></i>
                                         Chính sách thành viên
                                     </a>
                                 </dt>
                                 <dt className="footer-item">
-                                    <a href="https://www.facebook.com/reviewuitie104" target="_blank" className="link">
-                                        <i className="fas fa-info-circle"></i>
-                                        Về chúng tôi
-                                    </a>
+                                <Link to="/about" style={{ textDecoration: 'none' }} href="/about" className="link">
+                                        <p style={{ textDecoration: 'none' }}><i class="fas fa-info-circle"></i>Về chúng tôi</p>
+                                    </Link>
                                 </dt>
                             </dl>
                         </div>

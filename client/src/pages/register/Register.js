@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import "./register.css"
-import { Link } from "react-router-dom"
 import axios from 'axios'
 
 export default function Register() {

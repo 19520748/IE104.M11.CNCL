@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useContext, useReducer, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Sidebar from '../../components/sidebar/Sidebar'
 import { Context } from '../../context/Context'
 import "./settings.css"

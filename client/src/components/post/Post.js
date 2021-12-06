@@ -8,11 +8,11 @@ export default function Post({ post }) {
                 <div className="post">
                     <div className="postInfo">
                         <div className="postInfo__img">
-                        {post.photo && (<img className="postImg" src={PF + post.photo} alt="image" />)}
+                        {post.photo && (<img className="postImg" src={PF + post.photo} alt="postImg" />)}
             </div>
 
                         <div className="postCats">
-                            {post.categories.map((c) => {
+                            {post.categories.forEach((c) => {
                                 <span className="postCat">{c.name}</span>
                             })}
 
