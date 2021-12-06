@@ -1,14 +1,13 @@
 
 .login{
-    height: 92vh;
     background: linear-gradient(
         rgba(0, 0, 0, 0.4), 
         rgba(0, 0, 0, 0.4)
       ),
-    url("https://previews.123rf.com/images/jagcz/jagcz1702/jagcz170200137/72504515-asian-food-served-on-old-wooden-table-top-view-space-for-text-chinese-and-vietnamese-cuisine-set-.jpg") no-repeat;
+    url("https://www.wallpaperflare.com/static/259/141/300/food-still-life-wooden-surface-brown-wallpaper.jpg") no-repeat;
     background-size: cover;
-    min-width: 100%;
-    min-height: 100%;
+    height: 90vh;
+    min-height: 500px;
     align-items: center;
     font-family: 'Comfortaa', cursive;
     }

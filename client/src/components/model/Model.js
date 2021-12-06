@@ -14,7 +14,7 @@ export const Model = ({showModel, setShowModel}) => {
                         <h2>Chúng tớ nèeee</h2>
                         <p>
                             <a href="https://www.facebook.com/reviewuitie104" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i> 
-                                 Page của chúng tớ nè</a>
+                                Page của chúng tớ nè</a>
                             <br /><br />
                             <a href="https://m.me/reviewuitie104" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i> Nhắn tin với
                                 chúng tớ nè</a>

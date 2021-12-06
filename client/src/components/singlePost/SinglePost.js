@@ -77,15 +77,15 @@ export default function SinglePost() {
                     <span className="singlePostDate">{new Date(post.createdAt).toDateString()}</span>
                 </div>
                 {updateMode ? (<>
-                    <div className="d-flex rate">
+                    <div className="rate">
                         <span>Đánh giá:</span>
-                        <input type="text" className="singlePostRateInput" id="rating" cols="2" rows="1" value={rating}
+                        <input type="text" className="singlePostRateInput" maxlength="3" size="3" id="rating" cols="2" rows="1" value={rating}
                             onChange={(e) => setRating(e.target.value)} />
                         <span style={{ fontSize: 20 }}>/5<i style={{ color: 'yellow' }} className="fas fa-star"></i></span>
                     </div>
                 </>
                 ) :
-                    (<span className="singlePostRate">Đánh giá: {post.rating}/5<i className="fas fa-star"></i></span>)
+                    (<span className="singlePostRate">Đánh giá : {post.rating}/5<i className="fas fa-star"></i></span>)
                 }
                 {updateMode ? (<input className="singlePostAddressInput" value={address}
                     onChange={(e) => setAddress(e.target.value)} />) : (<span className="singlePostAddress">Địa chỉ : {address}</span>)}

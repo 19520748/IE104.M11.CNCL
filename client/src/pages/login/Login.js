@@ -27,11 +27,11 @@ export default function Login() {
         <div className="login">
             <form className="loginForm" onSubmit={handleSubmit}>
                 <span className="loginTitle">Đăng nhập</span>
-                <div style={{ margin: 8 }}>
+                <div className="m-2">
                     <i className="loginIcon fas fa-user-astronaut"></i>
                     <input type="text" placeholder="Username" className="loginInput" required ref={userRef} />
                 </div>
-                <div style={{ margin: 8 }}>
+                <div className="m-2">
                     <i className="loginIcon fas fa-lock"></i>
                     <input type="password" placeholder="Mật khẩu" className="loginInput" required ref={passwordRef} />
                 </div>

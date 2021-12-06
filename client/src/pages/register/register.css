@@ -1,14 +1,13 @@
 
 .register{
-    height: 92vh;
     background: linear-gradient(
         rgba(0, 0, 0, 0.4), 
         rgba(0, 0, 0, 0.4)
       ),
-    url("https://c1.wallpaperflare.com/preview/893/920/849/knife-food-wood-table.jpg") no-repeat;
+    url("https://ae01.alicdn.com/kf/HTB1uCSUGnJYBeNjy1zeq6yhzVXaG/Laeacco-Wooden-Board-Delicious-Foods-Baby-Portrait-Photography-Backgrounds-Customized-Photographic-Backdrops-For-Photo-Studio.jpg_Q90.jpg_.webp") no-repeat;
     background-size: cover;
-    min-width: 100%;
-    min-height: 100%;
+    height: 90vh;
+    min-height: 700px;
     color: #fff;
     align-items: center;
     font-family: 'Comfortaa', cursive;

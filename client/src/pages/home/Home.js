@@ -23,16 +23,16 @@ export default function Home() {
         <>
 
             <Header />
-        <div className="grid">
-            <div className="home container">
-                <div className="left-container">
-                    <Posts posts={posts} />
-                </div>
-                <div className="right-container">
-                    <Sidebar />
+            <div className="grid">
+                <div className="home container">
+                    <div className="left-container">
+                        <Posts posts={posts} />
+                    </div>
+                    <div className="right-container">
+                        <Sidebar />
+                    </div>
                 </div>
             </div>
-        </div>
         </>
     )
 }

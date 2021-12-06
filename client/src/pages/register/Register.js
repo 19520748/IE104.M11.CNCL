@@ -30,37 +30,37 @@ export default function Register() {
             <form className="registerForm" onSubmit={handleSubmit}>
                 <span className="registerTitle">Đăng kí</span>
                 {error && <span className="errorAppear">Oops...! Có vẻ như tài khoản đã tồn tại rồi <i className="fas fa-heart-broken"></i></span>}
-                <div style={{ margin: 8 }}>
+                <div className="m-2">
                     <i className="registerIcon fas fa-user-astronaut"></i>
                     <input type="text" placeholder="Username của bạn" required className="registerInput"
                         onChange={e => setUsername(e.target.value)}
                     />
                 </div>
-                <div style={{ margin: 8 }}>
+                <div className="m-2">
                     <i className="registerIcon fas fa-birthday-cake"></i>
                     <input type="text" placeholder="Ngày sinh của bạn" required className="registerInput"
                         onChange={e => setBirth(e.target.value)}
                     />
                 </div>
-                <div style={{ margin: 8 }}>
+                <div className="m-2">
                     <i className="registerIcon fas fa-envelope"></i>
                     <input type="text" placeholder="Email của bạn" required className="registerInput"
                         onChange={e => setEmail(e.target.value)}
                     />
                 </div>
-                <div style={{ margin: 8 }}>
+                <div className="m-2">
                     <i className="registerIcon fas fa-map-marker-alt"></i>
                     <input type="text" placeholder="Địa chỉ" required className="registerInput"
                         onChange={e => setAddress(e.target.value)}
                     />
                 </div>
-                <div style={{ margin: 8 }}>
+                <div className="m-2">
                     <i className="registerIcon fas fa-pizza-slice"></i>
                     <input type="text" placeholder="Món ăn yêu thích" required className="registerInput"
                         onChange={e => setFavoredfood(e.target.value)}
                     />
                 </div>
-                <div style={{ margin: 8 }}>
+                <div className="m-2">
                     <i className="registerIcon fas fa-lock"></i>
                     <input type="password" placeholder="Mật khẩu" minlength="8" required className="registerInput"
                         onChange={e => setPassword(e.target.value)} />

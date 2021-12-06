@@ -15,7 +15,7 @@ export default function Footer() {
                             <div className="footer">
                                 <div className="footer__icon">
                                 <Link to="/" className="logo-img" style={{ textDecoration: 'none' }} href="/"><img src="images/reviewlogo1.png" alt="Logo Review" />
-                                        <h5 style={{ margin: "10px" }}>Review</h5>
+                                        <h5 className="m-2">Review</h5>
                                     </Link>
                                     <p>Ăn khắp nơi <br /> Chơi khắp chốn</p>
 
@@ -70,7 +70,7 @@ export default function Footer() {
                                 </dt>
                                 <dt className="footer-item">
                                 <Link to="/about" style={{ textDecoration: 'none' }} href="/about" className="link">
-                                        <p style={{ textDecoration: 'none' }}><i class="fas fa-info-circle"></i>Về chúng tôi</p>
+                                        <i class="fas fa-info-circle"></i>Về chúng tôi
                                     </Link>
                                 </dt>
                             </dl>

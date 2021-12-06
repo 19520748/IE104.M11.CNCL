@@ -44,38 +44,38 @@ export default function Write() {
     }
     return (
         <div className="grid">
-        <div className="write container">
-            <div>
-            {file &&
-                <img className="writeImg" alt="write"
-                    src={URL.createObjectURL(file)} />
-            }
-            </div>
-            <div className="writeFormGroup">
-                <label htmlFor="fileInput"><i className="writeIcon fas fa-plus"></i></label>
-                <input type="file" id="fileInput" style={{ display: "none" }} onChange={e => setFile(e.target.files[0])} />
-            </div>
-            <form className="writeForm" onSubmit={handleSubmit}>
+            <div className="write container">
+                <div>
+                    {file &&
+                        <img className="writeImg" alt="write"
+                            src={URL.createObjectURL(file)} />
+                    }
+                </div>
+                <div className="writeFormGroup">
+                    <label htmlFor="fileInput"><i className="writeIcon fas fa-plus"></i></label>
+                    <input type="file" id="fileInput" style={{ display: "none" }} onChange={e => setFile(e.target.files[0])} />
+                </div>
+                <form className="writeForm" onSubmit={handleSubmit}>
 
-                <div style={{ gridColumn: 1, gridRow: 1 }}>
-                    <input type="type" placeholder="Tiêu đề" required className="writeInput" autoFocus={true} onChange={e => setTitle(e.target.value)} />
-                    <textarea rows="12" placeholder="Nội dung bài viết..." type="text" required className="writeInput writeText"
-                        onChange={e => setDesc(e.target.value)}></textarea>
-                </div>
-                <div style={{ gridColumn: 2, gridRow: 1 }}>
-                    <i className="writeStar fas fa-map-marker-alt"></i>
-                    <input placeholder="Địa chỉ" type="text" required className="writeInput writeText" onChange={e => setAddress(e.target.value)} />
-                    <div style={{textAlign: 'center'}}>
-                    <label htmlFor="rating" className="writeLabelRating">Đánh giá</label>
-                    <input type="text" className="writeRating writeText" required id="rating" maxlength="3" size="3" onChange={e => setRating(e.target.value)} />
-                    <label htmlFor="rating" className="writeLabelRating">/ 5 <i className="writeRatingIcon fas fa-star"></i></label>
+                    <div style={{ gridColumn: 1, gridRow: 1 }}>
+                        <input type="type" placeholder="Tiêu đề" required className="writeInput" autoFocus={true} onChange={e => setTitle(e.target.value)} />
+                        <textarea rows="12" placeholder="Nội dung bài viết..." type="text" required className="writeInput writeText"
+                            onChange={e => setDesc(e.target.value)}></textarea>
                     </div>
-                    <div style={{textAlign: 'center', margin: 20}}>
-                        <button className="writeSubmit" type="submit">Đăng bài</button>
+                    <div style={{ gridColumn: 2, gridRow: 1 }}>
+                        <i className="writeStar fas fa-map-marker-alt"></i>
+                        <input placeholder="Địa chỉ" type="text" required className="writeInput writeText" onChange={e => setAddress(e.target.value)} />
+                        <div style={{ textAlign: 'center' }}>
+                            <label htmlFor="rating" className="writeLabelRating">Đánh giá</label>
+                            <input type="text" className="writeRating writeText" required id="rating" maxlength="3" size="3" onChange={e => setRating(e.target.value)} />
+                            <label htmlFor="rating" className="writeLabelRating">/ 5 <i className="writeRatingIcon fas fa-star"></i></label>
+                        </div>
+                        <div style={{ textAlign: 'center', margin: 20 }}>
+                            <button className="writeSubmit" type="submit">Đăng bài</button>
+                        </div>
                     </div>
-                </div>
-            </form>
-        </div>
+                </form>
+            </div>
         </div>
     )
 }

@@ -47,6 +47,9 @@
 .fa-times:hover{
     cursor: pointer;
 }
+.fa-facebook:before {
+    margin-right: 4px;
+}
 .model__body{
     padding: 15px;
 }

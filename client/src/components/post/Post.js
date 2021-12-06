@@ -19,7 +19,7 @@ export default function Post({ post }) {
                             {/* <span className="postCat">LIFE</span> */}
 
                         </div>
-                        <Link to={`/post/${post._id}`} className="link">
+                        <Link to={`/post/${post._id}`} className="link mt-2">
                             <span className="postTitle">
                                 {post.title}
                             </span>

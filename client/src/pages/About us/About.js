@@ -38,7 +38,7 @@ export default function About() {
                     </div>
                 </div>
                 <span className="divider-bar">
-                    <p>Chúng tớ có 5 thành viên xịn xò</p>
+                    <p className="mt-2">Chúng tớ có 5 thành viên xịn xò</p>
                 </span>
                 <div className="grid__row">
                     <div className="grid__column-2-5">

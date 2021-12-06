@@ -26,22 +26,25 @@ export default function Posts({ posts }) {
 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/banhmy.jpg" alt="Bánh mỳ" class="carousel-img" />
-                        <div class="carousel-caption">
-                            <h3>Món ăn Việt</h3>
-                        </div>
+                        <a href="#"><img src="images/banhmy.jpg" alt="Bánh mỳ" class="carousel-img" />
+                            <div class="carousel-caption">
+                                <h3>Món ăn Việt</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/sushi.jpeg" alt="Sushi" class="carousel-img" />
-                        <div class="carousel-caption">
-                            <h3>Món ăn Nhật</h3>
-                        </div>
+                        <a href="#"><img src="images/sushi.jpeg" alt="Sushi" class="carousel-img" />
+                            <div class="carousel-caption">
+                                <h3>Món ăn Nhật</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/xoixoai.jpg" alt="Xôi xoài" class="carousel-img" />
-                        <div class="carousel-caption">
-                            <h3>Món ăn Thái</h3>
-                        </div>
+                        <a href="#"><img src="images/xoixoai.jpg" alt="Xôi xoài" class="carousel-img" />
+                            <div class="carousel-caption">
+                                <h3>Món ăn Thái</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
