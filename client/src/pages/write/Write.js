@@ -43,6 +43,7 @@ export default function Write() {
 
     }
     return (
+        <div className="grid">
         <div className="write container">
             <div>
             {file &&
@@ -74,6 +75,7 @@ export default function Write() {
                     </div>
                 </div>
             </form>
+        </div>
         </div>
     )
 }
