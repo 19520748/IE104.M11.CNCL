@@ -31,7 +31,7 @@ export default function Topbar() {
 
                     {user ? (
                         <>
-                            <span className="WelcomeText">Xin chào {user.username} ! <i className="fas fa-heart"></i></span>
+                            <span className="WelcomeText">Xin chào {user.username} ! <i style={{color: 'orangered'}} className="fas fa-heart"></i></span>
                             <button className="navbar-toggler navbar-nav-icon-ava" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapsibleNavbar">
                                 {/* <span> <i className="fas fa-user-circle hamburger"></i></span> */}
