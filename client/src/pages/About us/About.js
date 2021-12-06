@@ -90,7 +90,7 @@ export default function About() {
                                 <a href="https://www.facebook.com/thien.phung.1253" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-facebook"></i>
                                 </a>
-                                <a href="https://www.instagram.com/_suchamay/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.instagram.com/ptthien_76/" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-instagram"></i>
                                 </a>
                             </div>

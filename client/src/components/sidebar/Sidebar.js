@@ -15,6 +15,20 @@ export default function Sidebar() {
 
                     <div className="card-body">
 
+                        <img src="images/defaultAva.png" alt="avatar" />
+                        <div className="card-text">
+                        <Link to="/?user=Minhanhne" style={{ textDecoration: 'none' }} className="hot-reviewer">
+                            <h4 style={{ textDecoration: 'none' }}>Minhanhne</h4>
+                        </Link>
+                            <p><i className="fas fa-map-marker-alt"> </i>Thôn cành lá<br />Độ hot: 5/5<i className="fas fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+
+                    <div className="card-body">
+
                         <img src="images/neulaanh.jpg" alt="avatar" />
                         <div className="card-text">
                         <Link to="/?user=neulaanh" style={{ textDecoration: 'none' }} className="hot-reviewer">
@@ -64,30 +78,6 @@ export default function Sidebar() {
                             <h4 style={{ textDecoration: 'none' }}>dhnbroken</h4>
                         </Link>
                             <p><i className="fas fa-map-marker-alt"> </i>Bốn bề là nhà<br />Độ hot: 4.3/5<i className="fas fa-star"></i>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="card">
-
-                    <div className="card-body">
-
-                        <img src="images/image14.png" alt="" />
-                        <div className="card-text">
-                            <h4>Lẩu cù lao</h4>
-                            <p><i className="fas fa-map-marker-alt"> </i>410 Nguyễn Xí,<br />4.3/5<i className="fas fa-star"></i>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="card">
-
-                    <div className="card-body">
-
-                        <img src="images/image14.png" alt="" />
-                        <div className="card-text">
-                            <h4>Lẩu cù lao</h4>
-                            <p><i className="fas fa-map-marker-alt"> </i>410 Nguyễn Xí,<br />4.3/5<i className="fas fa-star"></i>
                             </p>
                         </div>
                     </div>
