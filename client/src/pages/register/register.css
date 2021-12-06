@@ -4,10 +4,10 @@
         rgba(0, 0, 0, 0.4), 
         rgba(0, 0, 0, 0.4)
       ),
-    url("https://scontent.fsgn6-2.fna.fbcdn.net/v/t1.15752-9/261210397_915655389077897_2310401033975776946_n.png?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_ohc=pglbL7YFyJkAX8W6tAW&tn=44Z3rCsAVkXu8uyQ&_nc_ht=scontent.fsgn6-2.fna&oh=ca2008ad64401cb6b6c457981c04b465&oe=61D54058") no-repeat;
+    url("https://scontent.xx.fbcdn.net/v/t1.15752-9/p403x403/263700011_3047959162145757_6429880530861393661_n.png?_nc_cat=104&ccb=1-5&_nc_sid=aee45a&_nc_ohc=Ud_k-DI58qgAX99Rhke&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=d7b26a8056e83eda12cd12a06697c4fe&oe=61D34686") no-repeat;
     background-size: cover;
     height: 90vh;
-    min-height: 700px;
+    min-height: 800px;
     color: #fff;
     align-items: center;
     font-family: 'Comfortaa', cursive;
@@ -17,7 +17,8 @@
     align-self: center;
     align-items: center;
     font-size: 50px;
-    color: #FFF;
+    font-weight: 700;
+    color: #fff;
     margin-bottom: 20px;
 }
 .registerForm{
@@ -36,7 +37,9 @@
     text-indent: 30px;
 }
 ::placeholder{
-    color: #DDD;
+    color: #CCC;
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
 }
 .registerInput:focus{
     outline: none;
@@ -63,7 +66,8 @@
     position: absolute;
     margin: 18px;
     font-size: 20px;
-    color: white;
+    color: #FFF;
+    z-index: 100;
 }
 .errorAppear{
     color: #fff;
