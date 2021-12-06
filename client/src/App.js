@@ -15,10 +15,12 @@ import {
   Route,
 } from "react-router-dom";
 import { Context } from "./context/Context";
+import ScrollToTop from "./components/Scroll/ScrollToTop";
 function App() {
   const {user} = useContext(Context);
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Topbar />
         <Switch>

@@ -1,12 +1,18 @@
 import "./about.css"
 import React from 'react'
 import Header from '../../components/header/Header'
-
+import { useState } from 'react';
+import { Model } from '../../components/model/Model'
 
 export default function About() {
+    const [showModel, setShowModel] = useState(false);
+
+    const openModel = () => {
+        setShowModel(prev => !prev )
+    }
+
     return (
         <>
-
             <Header />
             <div className="grid">
                 <div className="intro">
@@ -25,8 +31,8 @@ export default function About() {
                             Lưu ý: bài post không sử dụng những ngôn từ khiếm nhã, thiếu tôn trọng
                             <br />
                             Chúc các bạn có một thời gian vui vẻ nhé !
-                            <button class="open-model-btn">Liên hệ với chúng tớ</button>
-                            
+                            <button onClick={openModel} class="open-model-btn">Liên hệ với chúng tớ</button>
+
                         </p>
                         <img src="images/Iconmonan.png" alt="food" width="440px" height="386px"></img>
                     </div>
@@ -131,27 +137,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className="model hide">
-                <div className="model__inner">
-                    <div className="model__header">
-                        <p>Information</p>
-                        <i className="fas fa-times"></i>
-                    </div>
-                    <div className="model__body">
-                        <h2>Chúng tớ nèeee</h2>
-                        <p>
-                            <a href="https://www.facebook.com/reviewuitie104" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i>
-                                Page của chúng tớ nè</a>
-                            <br /><br />
-                            <a href="https://m.me/reviewuitie104" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i> Nhắn tin với
-                                chúng tớ nè</a>
-                        </p>
-                    </div>
-                    <div className="model__footer">
-                        <button>Close</button>
-                    </div>
-                </div>
-            </div>
+            <Model showModel={showModel} setShowModel={setShowModel} />
             
         </>
     )
