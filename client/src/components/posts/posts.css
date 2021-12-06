@@ -34,3 +34,23 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
+.LoadMoreButton{
+    justify-content: center;
+    padding: 20px;
+    width: 200px;
+    margin: 20px;
+    margin-left: 313px;
+    border: 2px solid #fff;
+    background-color: #3CAF4B;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.LoadMoreButton:hover{
+    background-color: yellow;
+    color: #000;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+}

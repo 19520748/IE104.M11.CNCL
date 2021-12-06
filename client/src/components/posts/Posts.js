@@ -5,7 +5,11 @@ import Post from '../post/Post';
 import { Link } from 'react-router-dom';
 export default function Posts({ posts }) {
     const [cats, setCats] = useState([]);
+    const [visible,setVisible]=useState(6);
 
+    const showMorePosts=()=>{
+        setVisible((preValue) => preValue+6);
+    }
     useEffect(() => {
         const getCats = async () => {
             const res = await axios.get("/categories")
@@ -65,17 +69,12 @@ export default function Posts({ posts }) {
                 </ul>
             </div>
             <div className="postsList">
-                {posts.map(p => (
+                {posts.slice(0,visible).map(p => (
                     <Post post={p} />
                 ))}
-                {/* <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/> */}
+               
             </div>
+            <button className="LoadMoreButton" onClick={showMorePosts}>Xem thêm</button>
         </div>
     )
 }

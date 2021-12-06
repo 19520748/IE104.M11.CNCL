@@ -6,8 +6,8 @@
       ),
     url("https://www.wallpaperflare.com/static/259/141/300/food-still-life-wooden-surface-brown-wallpaper.jpg") no-repeat;
     background-size: cover;
-    height: 90vh;
-    min-height: 500px;
+    height: 120vh;
+    min-height: 600px;
     align-items: center;
     font-family: 'Comfortaa', cursive;
     }
@@ -15,27 +15,42 @@
     align-self: center;
     align-items: center;
     font-size: 50px;
-    color: #FFF;
+    font-weight: 700;
+    color: #fff;
     margin-bottom: 20px;
+    
 }
 .loginForm{
-    padding-top: 20vh;
+    padding-top: 25vh;
     align-items: center;
     display: flex;
     flex-direction: column;
+    border:2px solid #fff;
+    margin: 90px;
+    padding-bottom: 100px;
+    margin-left: 520px;
+    margin-right: 520px;
+    background-color: rgba(255, 255, 255, 0.32);
+
 }
+
 .loginInput{
     position: relative;
     padding: 1em 3em 1em 1em;
     width: 400px;
     border-radius: 30px;
-    border: 1px solid #ccc;
+    border: 2px solid #000;
     background: rgba(255, 255, 255, 0.35);
-    color: #FFF;
+    /* color: #000; */
     text-indent: 30px;
+    background-color: #fff;
+    
 }
 ::placeholder{
-    color: #DDD;
+    color: #000;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+
 }
 .loginInput:focus{
     outline: none;
@@ -76,5 +91,6 @@
     position: absolute;
     margin: 18px;
     font-size: 20px;
-    color: red;
+    color: #000;
+    z-index: 100;
 }
