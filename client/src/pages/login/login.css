@@ -35,7 +35,7 @@
     color: #FFF;
     text-indent: 30px;
 }
-::placeholder{
+.loginInput::placeholder{
     color: #CCC;
     font-family: 'Comfortaa', cursive;
     font-size: 15px;
